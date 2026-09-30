@@ -13,7 +13,7 @@
 
 **Currently**
 
-Experimenting with AI-assisted workflows, and other tools and turning ideas into working products.
+Experimenting with AI-assisted workflows and other tools, and turning ideas into working products.
 
 **Tools**
 
@@ -23,6 +23,6 @@ Experimenting with AI-assisted workflows, and other tools and turning ideas into
 
 **Connect**
 
-<a href="https://www.linkedin.com/in/animeshembram07/" target="_blank">
+<a href="https://www.linkedin.com/in/animeshhembram07/">
   <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="30" height="30" alt="LinkedIn" />
 </a>
