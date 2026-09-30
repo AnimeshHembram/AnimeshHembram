@@ -1,6 +1,6 @@
 name: Update GitHub Activity Radar
 
-on:
+"on":
   schedule:
     # Update once every day.
     - cron: "17 6 * * *"
