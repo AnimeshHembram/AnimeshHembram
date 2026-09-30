@@ -2,8 +2,10 @@ name: Update Profile Banner
 
 on:
   schedule:
+    # Check every hour at 7 minutes past the hour.
     - cron: "7 * * * *"
 
+  # Lets you run the workflow manually.
   workflow_dispatch:
 
 permissions:
@@ -17,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Select banner
+      - name: Select banner URL
         env:
           TZ: Asia/Kolkata
         run: |
@@ -26,58 +28,54 @@ jobs:
           HOUR=$(date +%H)
           DAY=$(date +%A | tr '[:upper:]' '[:lower:]')
 
-          echo "India time: $(date)"
-          echo "Day: $DAY"
-          echo "Hour: $HOUR"
-
           case "$DAY" in
 
             monday)
               if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
-                BANNER="monday-day.gif"
+                BANNER_URL="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
               else
-                BANNER="monday-night.gif"
+                BANNER_URL="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif"
               fi
               ;;
 
             tuesday)
               if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
-                BANNER="tuesday-day.gif"
+                BANNER_URL="https://media.giphy.com/media/ZVEAsN6eaznz4FqGt8/giphy.gif"
               else
-                BANNER="tuesday-night.gif"
+                BANNER_URL="https://media.giphy.com/media/dMT2l2MKURkeXSOART/giphy.gif"
               fi
               ;;
 
             wednesday)
               if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
-                BANNER="wednesday-day.gif"
+                BANNER_URL="https://media.giphy.com/media/px8O7NANzzaqk/giphy.gif"
               else
-                BANNER="wednesday-night.gif"
+                BANNER_URL="https://media.giphy.com/media/S2IfEQqgWc0AH4r6Al/giphy.gif"
               fi
               ;;
 
             thursday)
               if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
-                BANNER="thursday-day.gif"
+                BANNER_URL="https://media.giphy.com/media/brHaCdJqCXijm/giphy.gif"
               else
-                BANNER="thursday-night.gif"
+                BANNER_URL="https://media.giphy.com/media/h8HmN0UcEKR0xWnv3R/giphy.gif"
               fi
               ;;
 
             friday)
               if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
-                BANNER="friday-day.gif"
+                BANNER_URL="https://media.giphy.com/media/JAnYmCykt41OYw1HJG/giphy.gif"
               else
-                BANNER="friday-night.gif"
+                BANNER_URL="https://media.giphy.com/media/blSTtZehjAZ8I/giphy.gif"
               fi
               ;;
 
             saturday)
-              BANNER="saturday.gif"
+              BANNER_URL="https://media.giphy.com/media/GG2UAv9uRblny/giphy.gif"
               ;;
 
             sunday)
-              BANNER="sunday.gif"
+              BANNER_URL="https://media.giphy.com/media/d2ItDZZumUI6Y/giphy.gif"
               ;;
 
             *)
@@ -86,16 +84,40 @@ jobs:
               ;;
           esac
 
-          echo "Selected banner: $BANNER"
+          echo "Selected banner: $BANNER_URL"
 
-          cp "assets/banners/$BANNER" "assets/banners/current.gif"
+          python <<'PY'
+          import os
+          import re
+
+          path = "README.md"
+          banner_url = os.environ["BANNER_URL"]
+
+          with open(path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          new_banner = (
+              f'<img src="{banner_url}" '
+              f'width="100%" alt="Animesh\'s banner" />'
+          )
+
+          pattern = r'<img src="[^"]+" width="100%" alt="Animesh\'s banner" />'
+
+          updated, count = re.subn(pattern, new_banner, content, count=1)
+
+          if count == 0:
+              raise SystemExit("Banner image line not found in README.md")
+
+          with open(path, "w", encoding="utf-8") as f:
+              f.write(updated)
+          PY
 
       - name: Commit banner change
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/banners/current.gif
+          git add README.md
 
           if git diff --cached --quiet; then
             echo "No banner change."
