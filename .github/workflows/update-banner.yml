@@ -2,10 +2,10 @@ name: Update Profile Banner
 
 on:
   schedule:
-    # Check every hour at 7 minutes past the hour.
+    # Check every hour.
     - cron: "7 * * * *"
 
-  # Lets you run the workflow manually.
+  # Allows manual testing from Actions.
   workflow_dispatch:
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Select banner URL
+      - name: Select the correct GIPHY banner
         env:
           TZ: Asia/Kolkata
         run: |
@@ -27,6 +27,10 @@ jobs:
 
           HOUR=$(date +%H)
           DAY=$(date +%A | tr '[:upper:]' '[:lower:]')
+
+          echo "Current India time: $(date)"
+          echo "Day: $DAY"
+          echo "Hour: $HOUR"
 
           case "$DAY" in
 
@@ -79,40 +83,59 @@ jobs:
               ;;
 
             *)
-              echo "Unknown day"
+              echo "Unknown day: $DAY"
               exit 1
               ;;
           esac
 
-          echo "Selected banner: $BANNER_URL"
+          echo "Selected banner:"
+          echo "$BANNER_URL"
+
+          export BANNER_URL
 
           python <<'PY'
           import os
           import re
+          from pathlib import Path
 
-          path = "README.md"
+          readme = Path("README.md")
+          content = readme.read_text(encoding="utf-8")
+
           banner_url = os.environ["BANNER_URL"]
 
-          with open(path, "r", encoding="utf-8") as f:
-              content = f.read()
-
-          new_banner = (
-              f'<img src="{banner_url}" '
-              f'width="100%" alt="Animesh\'s banner" />'
+          pattern = (
+              r'<img\s+'
+              r'src="[^"]+"\s+'
+              r'width="100%"\s+'
+              r'alt="[^"]*"\s*/>'
           )
 
-          pattern = r'<img src="[^"]+" width="100%" alt="Animesh\'s banner" />'
+          replacement = (
+              f'<img src="{banner_url}" '
+              f'width="100%" '
+              f'alt="Animesh\'s banner" />'
+          )
 
-          updated, count = re.subn(pattern, new_banner, content, count=1)
+          updated, count = re.subn(
+              pattern,
+              replacement,
+              content,
+              count=1
+          )
 
-          if count == 0:
-              raise SystemExit("Banner image line not found in README.md")
+          if count != 1:
+              raise SystemExit(
+                  "Could not find the banner image in README.md"
+              )
 
-          with open(path, "w", encoding="utf-8") as f:
-              f.write(updated)
+          if updated == content:
+              print("Banner is already correct. No change needed.")
+          else:
+              readme.write_text(updated, encoding="utf-8")
+              print("README.md banner updated successfully.")
           PY
 
-      - name: Commit banner change
+      - name: Commit banner update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -120,7 +143,7 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No banner change."
+            echo "No banner change. Nothing to commit."
             exit 0
           fi
 
