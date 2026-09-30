@@ -1,0 +1,106 @@
+name: Update Profile Banner
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-banner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select banner
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          set -e
+
+          HOUR=$(date +%H)
+          DAY=$(date +%A | tr '[:upper:]' '[:lower:]')
+
+          echo "India time: $(date)"
+          echo "Day: $DAY"
+          echo "Hour: $HOUR"
+
+          case "$DAY" in
+
+            monday)
+              if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
+                BANNER="monday-day.gif"
+              else
+                BANNER="monday-night.gif"
+              fi
+              ;;
+
+            tuesday)
+              if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
+                BANNER="tuesday-day.gif"
+              else
+                BANNER="tuesday-night.gif"
+              fi
+              ;;
+
+            wednesday)
+              if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
+                BANNER="wednesday-day.gif"
+              else
+                BANNER="wednesday-night.gif"
+              fi
+              ;;
+
+            thursday)
+              if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
+                BANNER="thursday-day.gif"
+              else
+                BANNER="thursday-night.gif"
+              fi
+              ;;
+
+            friday)
+              if [ "$HOUR" -ge 4 ] && [ "$HOUR" -lt 23 ]; then
+                BANNER="friday-day.gif"
+              else
+                BANNER="friday-night.gif"
+              fi
+              ;;
+
+            saturday)
+              BANNER="saturday.gif"
+              ;;
+
+            sunday)
+              BANNER="sunday.gif"
+              ;;
+
+            *)
+              echo "Unknown day"
+              exit 1
+              ;;
+          esac
+
+          echo "Selected banner: $BANNER"
+
+          cp "assets/banners/$BANNER" "assets/banners/current.gif"
+
+      - name: Commit banner change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/banners/current.gif
+
+          if git diff --cached --quiet; then
+            echo "No banner change."
+            exit 0
+          fi
+
+          git commit -m "chore: update profile banner"
+          git push
