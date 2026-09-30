@@ -23,6 +23,6 @@ Experimenting with AI-assisted workflows and other tools, and turning ideas into
 
 **Connect**
 
-<a href="https://www.linkedin.com/in/animeshhembram07/">
-  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="30" height="30" alt="LinkedIn" />
-</a>
+**Connect**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/animeshhembram07/)
