@@ -50,7 +50,7 @@ A simple web app for tracking habits and keeping progress visible.
 ## GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AnimeshHembram&hide_border=true" alt="GitHub activity graph" />
+  <img src="./assets/github-activity-radar.svg" width="85%" alt="GitHub activity radar" />
 </p>
 
 <p align="center">
