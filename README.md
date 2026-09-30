@@ -22,4 +22,37 @@ Experimenting with AI-assisted workflows and other tools, and turning ideas into
 </p>
 
 **Connect**
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/animeshhembram07/)
+
+---
+
+## Current Projects
+
+### Portfolio
+
+Building and refining my personal portfolio — an interactive space for design, technology, and experimentation.
+
+[View repository](https://github.com/AnimeshHembram/Portfolio)
+
+---
+
+## What I've Built
+
+### Habit Tracker
+
+A simple web app for tracking habits and keeping progress visible.
+
+[View repository](https://github.com/AnimeshHembram/habit-tracker)
+
+---
+
+## GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AnimeshHembram&hide_border=true" alt="GitHub activity graph" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=AnimeshHembram&theme=dark&hide_border=true&timezone=Asia%2FKolkata" alt="GitHub streak" />
+</p>
