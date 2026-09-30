@@ -49,9 +49,11 @@ A simple web app for tracking habits and keeping progress visible.
 
 ## GitHub Activity
 
+
 <p align="center">
-  <img src="./assets/github-activity-radar.svg" width="85%" alt="GitHub activity radar" />
+  <img src="https://raw.githubusercontent.com/AnimeshHembram/AnimeshHembram/main/assets/github-activity-radar.svg?v=4" width="85%" alt="GitHub activity radar" />
 </p>
+
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=AnimeshHembram&theme=dark&hide_border=true&timezone=Asia%2FKolkata" alt="GitHub streak" />
