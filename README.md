@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif" width="100%" alt="Animesh's banner" />
+<img src="https://media.giphy.com/media/ZVEAsN6eaznz4FqGt8/giphy.gif" width="100%" alt="Animesh's banner" />
 
 ### somewhere between experiment and curiosity
 
