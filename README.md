@@ -1,3 +1,10 @@
+
+<div align="center">
+
+<h3><code>&gt; Hello, I'm Animesh — a Creative Builder _</code></h3>
+
+</div>
+
 <div align="center">
 
 <img src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif" width="100%" alt="Animesh's banner" />
