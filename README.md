@@ -1,6 +1,22 @@
-
-
 ## About Me
+
+<!-- PHASE 2: MEME + INTRODUCTION -->
+
+<table width="100%">
+  <tr>
+    <td width="32%" align="center" valign="middle">
+      <img
+        src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
+        width="100%"
+        alt="Animesh's meme GIF"
+      />
+    </td>
+    <td width="68%" align="center" valign="middle">
+      <h2>Hello, I'm Animesh</h2>
+    </td>
+  </tr>
+</table>
+
 
 ### Creative Builder
 📍 India
