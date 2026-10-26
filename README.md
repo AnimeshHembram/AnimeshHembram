@@ -1,7 +1,6 @@
 ## About Me
 
 <!-- MEME + INTRODUCTION ROW -->
-
 <table width="100%">
   <tr>
     <!-- LARGE MEME: 70% -->
