@@ -1,8 +1,9 @@
-
 <div align="center">
-
-<h3><code>&gt; Hello, I'm Animesh — a Creative Builder _</code></h3>
-
+  <img
+    src="assets/headline.gif"
+    alt="Hello, I'm Animesh — a Creative Builder"
+    width="100%"
+  />
 </div>
 
 <div align="center">
