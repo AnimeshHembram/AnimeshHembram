@@ -1,25 +1,22 @@
 ## About Me
 
 <!-- MEME + INTRODUCTION ROW -->
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td width="70%" align="left" valign="middle">
-        <img
-          src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
-          alt="Animesh's meme GIF"
-          width="100%"
-        />
-      </td>
-      <td width="30%" align="center" valign="middle">
-        <h2>Hello, I'm Animesh</h2>
-        <h3>a Creative Builder</h3>
-      </td>
-    </tr>
-  </tbody>
+  <tr>
+    <td width="60%" align="center" valign="middle">
+      <img
+        src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
+        alt="Animesh's meme GIF"
+        width="100%"
+      />
+    </td>
+    <td width="40%" align="center" valign="middle">
+      <h2>Hello, I'm Animesh</h2>
+      <h3>a Creative Builder</h3>
+    </td>
+  </tr>
 </table>
-
-
 
 
 ## About Me
