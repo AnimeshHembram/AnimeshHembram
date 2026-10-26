@@ -6,13 +6,26 @@
   />
 </div>
 
-<div align="center">
 
-<img src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif" width="100%" alt="Animesh's banner" />
+<table width="100%" border="0">
+  <tr>
+    <td width="32%" align="center" valign="middle">
+      <img
+        src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
+        width="100%"
+        alt="Animesh's meme GIF"
+      />
+    </td>
+    <td width="68%" align="center" valign="middle">
+      <img
+        src="https://ghchart.rshah.org/AnimeshHembram"
+        width="100%"
+        alt="Animesh's GitHub contribution graph"
+      />
+    </td>
+  </tr>
+</table>
 
-### somewhere between experiment and curiosity
-
-</div>
 
 ## About Me
 
