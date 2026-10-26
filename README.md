@@ -22,8 +22,7 @@
 </table>
 
 
-**Start Here
-**
+Start Here
 A few things I've been building.
 
 - **[OpenConverter](https://github.com/AnimeshHembram/OpenConverter)** — A free, open-source file converter that runs entirely in your browser, with privacy in mind.
