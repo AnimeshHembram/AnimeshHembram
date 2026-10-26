@@ -1,25 +1,24 @@
 ## About Me
 
 <!-- MEME + INTRODUCTION ROW -->
-
 <table width="100%">
   <tr>
-    <!-- BIG MEME PANEL -->
-    <td width="40%" align="center" valign="middle">
+    <td width="42%" align="center" valign="middle">
       <img
         src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
         width="100%"
         alt="Animesh's meme GIF"
       />
     </td>
-
-    <!-- TEXT PANEL -->
-    <td width="60%" align="center" valign="middle">
+    <td width="58%" align="center" valign="middle">
       <h1>Hello, I'm Animesh</h1>
       <h2>a Creative Builder</h2>
     </td>
   </tr>
 </table>
+
+## About Me
+
 
 
 
