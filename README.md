@@ -1,13 +1,3 @@
-<div align="center">
-  <img
-    src="assets/headline.gif"
-    alt="Hello, I'm Animesh — a Creative Builder"
-    width="100%"
-  />
-</div>
-
-
-
 <!-- PHASE 1: FULL-WIDTH CONTRIBUTION DASHBOARD -->
 
 <div align="center">
