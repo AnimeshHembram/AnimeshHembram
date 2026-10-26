@@ -1,4 +1,3 @@
-
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
@@ -10,11 +9,13 @@
         />
       </td>
       <td width="50%" align="center" valign="middle">
-        <img
-          src="https://raw.githubusercontent.com/AnimeshHembram/AnimeshHembram/main/assets/intro-text.png"
-          alt="Hello, I'm Animesh — a Creative Builder"
-          width="100%"
-        />
+        <a href="https://animesh-portfolio-bci.pages.dev/" target="_blank">
+          <img
+            src="https://raw.githubusercontent.com/AnimeshHembram/AnimeshHembram/main/assets/intro-text.png"
+            alt="Hello, I'm Animesh — a Creative Builder. Visit my portfolio."
+            width="100%"
+          />
+        </a>
       </td>
     </tr>
   </tbody>
