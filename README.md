@@ -7,24 +7,17 @@
 </div>
 
 
-<table width="100%" border="0">
-  <tr>
-    <td width="32%" align="center" valign="middle">
-      <img
-        src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
-        width="100%"
-        alt="Animesh's meme GIF"
-      />
-    </td>
-    <td width="68%" align="center" valign="middle">
-      <img
-        src="https://ghchart.rshah.org/AnimeshHembram"
-        width="100%"
-        alt="Animesh's GitHub contribution graph"
-      />
-    </td>
-  </tr>
-</table>
+
+<!-- PHASE 1: FULL-WIDTH CONTRIBUTION DASHBOARD -->
+
+<div align="center">
+  <img
+    src="https://ghchart.rshah.org/AnimeshHembram"
+    alt="Animesh's GitHub contribution dashboard"
+    width="100%"
+  />
+</div>
+
 
 
 ## About Me
