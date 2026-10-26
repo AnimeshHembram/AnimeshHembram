@@ -1,13 +1,3 @@
-<!-- PHASE 1: FULL-WIDTH CONTRIBUTION DASHBOARD -->
-
-<div align="center">
-  <img
-    src="https://ghchart.rshah.org/AnimeshHembram"
-    alt="Animesh's GitHub contribution dashboard"
-    width="100%"
-  />
-</div>
-
 
 
 ## About Me
