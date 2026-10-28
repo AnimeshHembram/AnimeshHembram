@@ -1,14 +1,14 @@
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
-      <td width="80%" align="center" valign="middle">
+      <td width="75%" align="center" valign="middle">
         <img
           src="https://media.giphy.com/media/px8O7NANzzaqk/giphy.gif"
           alt="Animesh's coding meme"
           width="100%"
         />
       </td>
-      <td width="20%" align="center" valign="middle">
+      <td width="25%" align="center" valign="middle">
         <a href="https://animesh-portfolio-bci.pages.dev/" target="_blank">
           <img
             src="https://raw.githubusercontent.com/AnimeshHembram/AnimeshHembram/main/assets/intro-text.png"
