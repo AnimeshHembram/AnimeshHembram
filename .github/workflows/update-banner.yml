@@ -132,11 +132,12 @@ jobs:
           )
 
           updated, count = re.subn(
-              pattern,
-              replacement,
-              content,
-              count=1
-          )
+          pattern,
+          replace_banner,
+          content,
+           count=1,
+          flags=re.DOTALL
+           )
 
           if count != 1:
               raise SystemExit(
