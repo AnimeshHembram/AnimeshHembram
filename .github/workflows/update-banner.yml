@@ -103,12 +103,27 @@ jobs:
 
           banner_url = os.environ["BANNER_URL"]
 
-          pattern = (
-              r'<img\s+'
-              r'src="[^"]+"\s+'
-              r'width="100%"\s+'
-              r'alt="[^"]*"\s*/>'
-          )
+          pattern = r'<img\b[^>]*>'
+
+          def replace_banner(match):
+              tag = match.group(0)
+
+              if not re.search(r'\bwidth\s*=\s*["\']100%["\']', tag):
+                  return tag
+
+              if not re.search(r'\bsrc\s*=\s*["\'][^"\']+["\']', tag):
+                  return tag
+
+              return re.sub(
+                  r'(\bsrc\s*=\s*["\'])[^"\']+(["\'])',
+                  lambda src_match: (
+                      src_match.group(1)
+                      + banner_url
+                      + src_match.group(2)
+                  ),
+                  tag,
+                  count=1
+              )
 
           replacement = (
               f'<img src="{banner_url}" '
