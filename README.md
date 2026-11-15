@@ -3,7 +3,7 @@
     <tr>
       <td width="75%" align="center" valign="middle">
         <img
-          src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3M2ZtcHgwenpyYWJiYnVnbm5oYmFteDUxeWNvNGhtZWE0OGwzbnNlZSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/kopN26K2ThF9j7RL4K/giphy.gif"
+          src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif"
           alt="Animesh's coding meme"
           width="100%"
         />
