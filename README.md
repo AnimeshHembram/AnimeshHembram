@@ -3,7 +3,7 @@
     <tr>
       <td width="75%" align="center" valign="middle">
         <img
-          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDM2bXRvN3kwZWo2aHN1M3cyeDM4ZGFnNjU1d3d3Nnl6ZG1ydnF0bCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/1zAbIA50q9oWI725qq/giphy.gif"
+          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjYxcXlmNGg4NnpnMjFmZXByOW0ybTNqbTltN2ZucW1mZHl5enE5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vsTifXFIk5ktk38wZb/giphy.gif"
           alt="Animesh's coding meme"
           width="100%"
         />
