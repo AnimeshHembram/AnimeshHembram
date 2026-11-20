@@ -4,7 +4,7 @@
 <tr>
 <td width="75%" align="center" valign="middle">
 <!-- MARVEL_BANNER_START -->
-<img src="https://media.giphy.com/media/NWyOqVyZNkS706WMoc/giphy.gif" alt="Avengers Doomsday — Marvel banner" width="100%" />
+<img src="https://media.giphy.com/media/JAnYmCykt41OYw1HJG/giphy.gif" alt="Avengers Doomsday — Marvel banner" width="100%" />
 <!-- MARVEL_BANNER_END -->
 </td>
 <td width="25%" align="center" valign="middle">
