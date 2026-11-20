@@ -3,15 +3,13 @@
   <tbody>
     <tr>
       <td width="75%" align="center" valign="middle">
-
         <!-- MARVEL_BANNER_START -->
         <img
-          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2liamZpZW05dm5sOG52ZWxldjFtM2hyN2QyMnRra3czOXNvYndtdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eenzqB2MsGKbK/giphy.gif"
+          src="YOUR_CURRENT_GIPHY_URL"
           alt="Avengers Doomsday — Marvel banner"
           width="100%"
         />
         <!-- MARVEL_BANNER_END -->
-
       </td>
       <td width="25%" align="center" valign="middle">
         <a href="https://animesh-portfolio-bci.pages.dev/" target="_blank">
@@ -25,11 +23,3 @@
     </tr>
   </tbody>
 </table>
-
-## Start Here
-
-A few things I've been building.
-
-- [OpenConverter](https://github.com/AnimeshHembram/OpenConverter) — A free, open-source file converter that runs entirely in your browser.
-- [BoltPitch](https://github.com/AnimeshHembram/boltpitch) — A project I'm building and exploring.
-- [URL Checker](https://github.com/AnimeshHembram/URLChecker) — A tool for checking URLs.
