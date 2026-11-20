@@ -1,12 +1,17 @@
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
       <td width="75%" align="center" valign="middle">
+
+        <!-- MARVEL_BANNER_START -->
         <img
           src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2liamZpZW05dm5sOG52ZWxldjFtM2hyN2QyMnRra3czOXNvYndtdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eenzqB2MsGKbK/giphy.gif"
-          alt="Animesh's coding meme"
+          alt="Avengers Doomsday — Marvel banner"
           width="100%"
         />
+        <!-- MARVEL_BANNER_END -->
+
       </td>
       <td width="25%" align="center" valign="middle">
         <a href="https://animesh-portfolio-bci.pages.dev/" target="_blank">
@@ -20,8 +25,6 @@
     </tr>
   </tbody>
 </table>
-
-
 
 ## Start Here
 
