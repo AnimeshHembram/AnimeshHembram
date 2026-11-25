@@ -3,7 +3,7 @@
 <tr>
 <td width="75%" align="center" valign="middle">
 <!-- MARVEL_BANNER_START -->
-<img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZHp5MGZvMGV6bXJhejd1Mnc3Y3k5cTM0Y29zbHV2NXB6OHFqdG9vZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dJo9h2zrdANo1GO3pd/giphy.gif">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWp6dmg5bHRuZnJjNzNkamRrb3llc2V5bWd1MTEyMHppeDZiczZibSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jGDgE41iZLKDxPjw9O/giphy.gif">
 <!-- MARVEL_BANNER_END -->
 </td>
 <td width="25%" align="center" valign="middle">
